@@ -4,19 +4,27 @@
     <div class="card-body">
       <img class="card-img-top rounded" :src="recipe.strMealThumb" :alt="recipe.strMeal" />
       <h6 class="card-title mt-2">{{ recipe.strMeal }}</h6>
-      <div class="material-icons">favorite</div>
-      <p class="card-text">Deliciosa recieta caseira</p>
+      <i 
+        class="material-icons"
+        :class="{'text-danger': recipeStore.isFavorite(recipe.idMeal)}"
+        @click="recipeStore.toggleFav(recipe)"
+        >
+        favorite
+      </i>
     </div>
   </div>
   </div>
 </template>
 
 <script setup>
+import { useRecipeStore } from '../store/RecipeStore';
+
 const props = defineProps({
   recipe: {
     type: Object,
     required: true,
   }
 })
+const recipeStore = useRecipeStore();
 
 </script>
