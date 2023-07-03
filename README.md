@@ -1,7 +1,46 @@
-# Vue 3 + Vite
+# App de receitas Vegetarianas e Veganas 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Essa aplicação está ainda em construção. Estou utilizando o framework **Vuejs** com estilização com classes do **Bootstrap** e a API pública <a href="https://www.themealdb.com/">TheMealDB</a>
 
-## Recommended IDE Setup
+<br/>
+<img src="./src/assets/telaHome.png">
+<br/>
+<br/>
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+
+
+## Para rodar a aplicação
+<br/>
+
+> Rode o comando:
+
+>> `npm install && npm run dev`
+
+<br/>
+<br/>
+
+
+## O que falta fazer:
+<br/>
+
+
+1. Resolver problema de reatividade dos estados
+2. Implementar o campo de busca por nome e ingrediente da receita
+3. ...
+
+<br/>
+<br/>
+
+## Tela de Favoritos
+<br/>
+
+<img src="./src/assets/telaFavoritos.png">
+<br/>
+<br/>
+
+## Tela de detalhe da receita
+<br/>
+
+<img src="./src/assets/telaDetalheReceita.png">
+
+

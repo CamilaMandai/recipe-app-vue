@@ -36,6 +36,6 @@ onMounted( async() => {
 const { recipes } = recipeStore;
 const { favoriteList } = recipeStore;
 
-const isFavorite = ref(false);
+const isFavorite = ref(false); 
 
 </script>

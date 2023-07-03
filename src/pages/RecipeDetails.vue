@@ -49,7 +49,7 @@ onMounted(async () => {
     console.log(selectedRecipe.strMeal + 'loaded')
   } catch (e) { 
     console.log(e)
-  }
+  } 
 })
 
 </script>
