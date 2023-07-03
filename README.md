@@ -9,7 +9,7 @@ Essa aplicação está ainda em construção. Estou utilizando o framework **Vue
 
 > Rode o comando:
 
->> `npm install && npm run dev`
+`npm install && npm run dev`
 
 ## O que falta fazer:
 
