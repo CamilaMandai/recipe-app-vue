@@ -1,11 +1,11 @@
 <template>
-  <div class="col-sm-4">
-  <div class="card mt-5">
+  <div class="col-sm-6 col-md-4 col-lg-3">
+  <div class="card mt-5 border-0">
     <div class="card-body">
-      <img class="card-img-top" :src="recipe.strMealThumb" :alt="recipe.strMeal" />
-      <h5 class="card-title mt-2">{{ recipe.strMeal }}</h5>
-      <a href="#" class="btn btn-danger">YouTube</a>
+      <img class="card-img-top rounded" :src="recipe.strMealThumb" :alt="recipe.strMeal" />
+      <h6 class="card-title mt-2">{{ recipe.strMeal }}</h6>
       <div class="material-icons">favorite</div>
+      <p class="card-text">Deliciosa recieta caseira</p>
     </div>
   </div>
   </div>

@@ -48,6 +48,16 @@ export const useRecipeStore = defineStore('recipeStore', {
         idMeal: "53043"
         }
     ],
+    favoriteList:[{
+      strMeal: "Escovitch Fish",
+      strMealThumb: "https://www.themealdb.com/images/media/meals/1520084413.jpg",
+      idMeal: "52944"
+      },
+      {
+      strMeal: "Fish fofos",
+      strMealThumb: "https://www.themealdb.com/images/media/meals/a15wsa1614349126.jpg",
+      idMeal: "53043"
+      }]
   }),
   actions: () => ({
 
