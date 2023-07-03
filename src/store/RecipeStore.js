@@ -20,7 +20,7 @@ export const useRecipeStore = defineStore('recipeStore', {
       this.recipes = [...vegetarian.meals, ...vegan.meals]
     },
     async getOneRecipe(id) {
-      const res = await fetch(`www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
+      const res = await fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`);
       const data = await res.json();
       this.selectedRecipe = data.meals[0];
     },

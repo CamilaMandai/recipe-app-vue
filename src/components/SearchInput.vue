@@ -1,4 +1,5 @@
 <template>
+  <h1>Looking for a delicious meal</h1>
   <div class="row">
       <div class="col-md-8 col-lg-5">
         <div class="input-group mt-4">

@@ -11,3 +11,7 @@ body {
 .not-selected{
     color:rgb(136, 135, 135);
 }
+
+i:hover{
+  cursor: pointer;
+}

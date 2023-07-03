@@ -1,7 +1,5 @@
 <template>
   <div>
-    <pre>{{ recipeStore.favoriteList }}</pre>
-    <h1>Looking for a delicious meal</h1>
     <SearchInput />
     <div v-if="loading">Loading...</div>
     <div class="d-flex mt-5 pe-auto">
@@ -19,7 +17,7 @@
 </template>
 
 <script setup>
-import SearchInput from '../components/SearchInput.vue'
+import SearchInput from '../components/SearchInput.vue';
 import { useRecipeStore } from '../store/RecipeStore';
 import RecipeCard from '../components/RecipeCard.vue';
 import { onMounted, ref } from 'vue';
