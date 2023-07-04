@@ -3,14 +3,10 @@ import { defineStore } from 'pinia';
 
 export const useRecipeStore = defineStore('recipeStore', {
   state: () => ({
-    recipes: [
-    ],
+    recipes: [],
     favoriteList:[],
     selectedRecipe: {}
   }),
-  getters: {
-
-  },
   actions: {
     async getRecipes() {
       const res = await fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian');

@@ -1,4 +1,5 @@
 <template>
+  <!-- <pre>{{ recipeStore.recipes }}</pre> -->
   <div>
     <SearchInput />
     <div v-if="loading">Loading...</div>
@@ -7,10 +8,10 @@
       <p :class="{'not-selected':!isFavorite}" class="px-4 hover" @click="isFavorite=true"> My favorite meals </p>
     </div>
     <div class="row" v-if="!isFavorite">
-      <RecipeCard v-for="recipe in recipes" :key="recipe.id" :recipe="recipe" />
+      <RecipeCard v-for="recipe in recipeStore.recipes" :key="recipe.idMeal" :recipe="recipe" />
     </div>
     <div class="row" v-if="isFavorite">
-      <RecipeCard v-for="fav in favoriteList" :key="fav.id" :recipe="fav" />
+      <RecipeCard v-for="fav in recipeStore.favoriteList" :key="fav.idMeal" :recipe="fav" />
     </div>
 
   </div>
@@ -25,17 +26,13 @@ import { onMounted, ref } from 'vue';
 const recipeStore = useRecipeStore();
 const loading = ref();
 // recipeStore.getRecipes();
-onMounted( async() => {
+onMounted( () => {
   loading.value= true;
-  await recipeStore.getRecipes();
+  recipeStore.getRecipes();
   loading.value= false;
   const savedFav = JSON.parse(localStorage.getItem('favoriteList'));
   recipeStore.favoriteList = [...savedFav];
 })
-
-const { recipes } = recipeStore;
-const { favoriteList } = recipeStore;
-
 const isFavorite = ref(false); 
 
 </script>

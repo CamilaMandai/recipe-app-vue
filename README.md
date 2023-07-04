@@ -13,8 +13,8 @@ Essa aplicação está ainda em construção. Estou utilizando o framework **Vue
 
 ## O que falta fazer:
 
-1. Resolver problema de reatividade dos estados
-2. Implementar o campo de busca por nome e ingrediente da receita
+1. Implementar o campo de busca por nome e ingrediente da receita
+2. Arrumar texto de instruções da receita
 3. ...
 
 ## Tela de Favoritos
