@@ -31,7 +31,7 @@ onMounted( () => {
   loading = true;
   recipeStore.getRecipes();
   loading = false;
-  const savedFav = JSON.parse(localStorage.getItem('favoriteList'));
+  const savedFav = JSON.parse(localStorage.getItem('favoriteList')) || [];
   recipeStore.favoriteList = [...savedFav];
 })
 const isFavorite = ref(false); 
