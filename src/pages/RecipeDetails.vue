@@ -15,7 +15,7 @@
       <div>
         <ul>
           <template v-for="(el, index) of new Array(20)">
-            <li v-if="recipeStore.selectedRecipe[`strMeasure${index+1}`]">
+            <li v-if="recipeStore.selectedRecipe[`strIngredient${index+1}`]">
               {{ recipeStore.selectedRecipe[`strMeasure${index+1}`]}} {{ recipeStore.selectedRecipe[`strIngredient${index+1}`] }}
             </li>
           </template>
@@ -45,7 +45,6 @@ const recipeStore = useRecipeStore();
 onMounted(async () => {
   try {
     await recipeStore.getOneRecipe(route.params.id);
-    console.log(recipeStore.selectedRecipe.strMeal + ' ' + 'loaded')
   } catch (e) { 
     console.log(e)
   } 
