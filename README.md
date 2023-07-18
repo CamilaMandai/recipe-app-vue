@@ -13,9 +13,7 @@ Essa aplicação está ainda em construção. Estou utilizando o framework **Vue
 
 ## O que falta fazer:
 
-1. Implementar o campo de busca por nome e ingrediente da receita
-2. Arrumar texto de instruções da receita
-3. ...
+1. Arrumar texto de instruções da receita
 
 ## Tela de Favoritos
 <br/>
